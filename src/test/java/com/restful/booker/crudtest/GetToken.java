@@ -13,6 +13,11 @@ public class GetToken extends TestBase
     @Test
     public void authToken()
     {
+
+
+
+
+
         String payload = "{\n" +
                 "    \"username\" : \"admin\",\n" +
                 "    \"password\" : \"password123\"\n" +

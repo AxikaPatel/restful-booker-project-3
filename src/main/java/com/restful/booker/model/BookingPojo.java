@@ -1,17 +1,17 @@
 package com.restful.booker.model;
 
-import java.util.List;
+import java.util.HashMap;
 
 public class BookingPojo
 {
+    private String username;
+    private String password;
 
     private String firstname;
     private String lastname;
     private int totalprice;
-    private boolean depositpaid;
-    private List<String> bookingdates;
-    private String checkin;
-    private String checkout;
+    private Boolean depositpaid;
+    private HashMap<Object,Object> bookingdates;
     private String additionalneeds;
 
     public String getFirstname() {
@@ -38,20 +38,46 @@ public class BookingPojo
         this.totalprice = totalprice;
     }
 
-    public boolean isDepositpaid() {
+    public Boolean getDepositpaid() {
         return depositpaid;
     }
 
-    public void setDepositpaid(boolean depositpaid) {
+    public void setDepositpaid(Boolean depositpaid) {
         this.depositpaid = depositpaid;
     }
 
-    public List<String> getBookingdates() {
+    public HashMap<Object, Object> getBookingdates() {
         return bookingdates;
     }
 
-    public void setBookingdates(List<String> bookingdates) {
+    public void setBookingdates(HashMap<Object, Object> bookingdates) {
         this.bookingdates = bookingdates;
     }
 
-}
+    public String getAdditionalneeds() {
+        return additionalneeds;
+    }
+
+    public void setAdditionalneeds(String additionalneeds) {
+        this.additionalneeds = additionalneeds;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    }
+
+
+
